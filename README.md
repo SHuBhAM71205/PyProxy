@@ -1,21 +1,41 @@
 # PyProxy
 
-PyProxy is a Tkinter control panel for the native HTTP proxy engine in
-`ProxyCore/`.
+PyProxy is a Tkinter control panel for the native HTTP proxy engine in Cpp language
+`ProxyCore`.
+
+## Credits
+
+- Original C++ proxy implementation by [Jeel Kalathiya](https://github.com/Jeelk01).
+- Binding of cpp and python by [Shubham Patel](https://github.com/SHuBhAM71205)
+- UI by Github Copilot
 
 ## Run the application
 
 Use Python 3.13 or newer with Tkinter available:
 
 ```powershell
-python main.py
+    #install deps
+    python -m venv .venv
+
+    source ./.venv/Scripts/Activate
+
+    pip install .
 ```
 
 Build the native extension from the repository root when it needs to be
 recompiled:
-
 ```powershell
 python setup.py build_ext --inplace
+```
+running:
+```powershell
+python main.py
+```
+
+
+Compiling whole file to .exe
+```powershell
+pyinstaller --clean --noconfirm --onefile --windowed --name PyProxy main.py
 ```
 
 ## Native wrapper API
@@ -43,3 +63,8 @@ using a virtual event.
 - `wrapper.cpp` exposes the `ProxyCore` methods to Python.
 - `pyproxy_native.pyi` describes the extension's Python API.
 - `ui/` contains the independent Tkinter panels and shared styling.
+
+# Image
+![alt text](./assets/image-1.png)
+
+

@@ -421,3 +421,6 @@ www.google.com
 --BLOCKED--
 clients4.google.com
 
+--BLOCKED--
+google.com
+
