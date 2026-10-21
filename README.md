@@ -6,7 +6,7 @@ PyProxy is a Tkinter control panel for the native HTTP proxy engine in Cpp langu
 ## Credits
 
 - Original C++ proxy implementation by [Jeel Kalathiya](https://github.com/Jeelk01).
-- Binding of cpp and python by [Shubham Patel](https://github.com/SHuBhAM71205)
+- Binding of cpp and python by [Shubham Patel(me)](https://github.com/SHuBhAM71205)
 - UI by Github Copilot
 
 ## Run the application
