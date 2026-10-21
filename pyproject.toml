@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ui*"]
+
+[project]
+name = "pyproxy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "setuptools>=84.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.22.3",
+]
+

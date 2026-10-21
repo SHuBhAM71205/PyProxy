@@ -1,0 +1,15 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*/.vscode/*
+*.vscode/*
+# Virtual environments
+.venv
+*.pyd
+*.spec
+*__init__.py
+*.exe
